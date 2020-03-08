@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: fac821a0f47853f6828a095508a9b835d54290f068db360f436a488bea755b17
+-- hash: 30daf77c0eb976757f663078d7d1c83ba08886a113a8f53e7cb919931d35f45e
 
 name:           haskell-tools
 version:        0.1.0.0
@@ -34,7 +34,7 @@ library
       src
   build-depends:
       base >=4.7 && <5
-    , random-extras
+    , random-fu
   default-language: Haskell2010
 
 executable haskell-tools-exe
@@ -47,7 +47,7 @@ executable haskell-tools-exe
   build-depends:
       base >=4.7 && <5
     , haskell-tools
-    , random-extras
+    , random-fu
   default-language: Haskell2010
 
 test-suite haskell-tools-test
@@ -61,5 +61,5 @@ test-suite haskell-tools-test
   build-depends:
       base >=4.7 && <5
     , haskell-tools
-    , random-extras
+    , random-fu
   default-language: Haskell2010
