@@ -40,6 +40,12 @@ packages:
 #   commit: e7b331f14bcffb8367cd58fbfc8b40ec7642100a
 #
 # extra-deps: []
+extra-deps:
+- random-extras-0.19@sha256:52579ee8653b17d8b19fb54833ecbab8df47b6cf61a77c9614df0c3155441d29,1137
+- random-fu-0.2.7.3@sha256:931b5c35d5180aecbfe33b381fdf29a31b73e46908ffc27360bbe96f12fa1ee8,4527
+- random-source-0.3.0.6@sha256:394ad3b426c3da9a0d327a09ca944304a28d135906f0289f29c39ae369591844,3844
+- flexible-defaults-0.0.3@sha256:6a7ab000561e1075003cb1053dfbbb4020ae2b02916776d1479c9c3fc82f5d0d,2508
+- rvar-0.2.0.3@sha256:c6f665019340d216cbc0c053c1f1bb5d9e6ac3363cab5a25f3880e06a9e4dcc5,2433
 
 # Override default flag values for local packages and extra-deps
 # flags: {}
