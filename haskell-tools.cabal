@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 30daf77c0eb976757f663078d7d1c83ba08886a113a8f53e7cb919931d35f45e
+-- hash: d0a3af42ad8e12c7e70eed9a84b7f176840db50a6a9643570a579263d3d6ea2b
 
 name:           haskell-tools
 version:        0.1.0.0
@@ -34,18 +34,34 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , gtk3
     , random-fu
   default-language: Haskell2010
 
-executable haskell-tools-exe
+executable binary-clock-exe
   main-is: Main.hs
   other-modules:
       Paths_haskell_tools
   hs-source-dirs:
-      app
+      app/binary-clock
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , gtk3
+    , haskell-tools
+    , random-fu
+  default-language: Haskell2010
+
+executable online-airdrop-location-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_haskell_tools
+  hs-source-dirs:
+      app/online-airdrop-location
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , gtk3
     , haskell-tools
     , random-fu
   default-language: Haskell2010
@@ -60,6 +76,7 @@ test-suite haskell-tools-test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , gtk3
     , haskell-tools
     , random-fu
   default-language: Haskell2010

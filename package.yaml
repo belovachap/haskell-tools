@@ -21,15 +21,26 @@ description:         Please see the README on GitHub at <https://github.com/gith
 
 dependencies:
 - base >= 4.7 && < 5
+- gtk3
 - random-fu
 
 library:
   source-dirs: src
 
 executables:
-  haskell-tools-exe:
+  online-airdrop-location-exe:
     main:                Main.hs
-    source-dirs:         app
+    source-dirs:         app/online-airdrop-location
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - haskell-tools
+
+  binary-clock-exe:
+    main:                Main.hs
+    source-dirs:         app/binary-clock
     ghc-options:
     - -threaded
     - -rtsopts
